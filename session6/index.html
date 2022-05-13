@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session 6</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Q 1 : Create unordered list and ordered list</h1>
+    <div class="flex-container">
+        <div class="flex-left">
+            <h2>Ordered List</h2>
+            <ol type="1">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+            </ol>
+            <ol type="A">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+            </ol>
+            <ol type="a">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+            </ol>
+            <ol type="I">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+            </ol>
+            <ol type="i">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+            </ol>
+        </div>
+        <div class="flex-right">
+            <h2>Unordered List</h2>
+            <ul type="disc">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+            </ul>
+            <ul type="circle">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+            </ul>
+            <ul type="square">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+            </ul>
+        </div>
+    </div>
+    <hr>
+    <h1>Q 2 : Create user form accepting name age contact address</h1>
+    <form class="form1">
+        <label for="name">Name</label>
+        <input type="text" class="name" id="name" value="" placeholder="Enter your name" required><br>
+
+        <label for="age">Age</label>
+        <input type="number" class="age" id="age" value="" placeholder="Enter your age" required><br>
+
+        <label for="contact">Contact</label>
+        <input type="number" class="contact" id="contact" maxlength="10" value="" placeholder="Enter mobile no." required><br>
+
+        <label for="address">Address</label>
+        <input type="text" class="address" id="address" value="" placeholder="Enter your address" required><br>
+
+        <button class="submit-btn">Submit</button>
+    </form>
+    <hr>
+    <h1>Q 3 : Create radio button in selecting Male, Female and create checkbox for selecting options as React HTML CSS JS Node</h1>
+    <form class="form2">
+        <div>Select Your Gender</div>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label> <br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label> <br> <br>
+        <div>Select the Topic</div>
+        <input type="checkbox" id="react" name="topics" value="react">
+        <label for="react">React</label> <br>
+        <input type="checkbox" id="html" name="topics" value="html">
+        <label for="html">HTML</label> <br>
+        <input type="checkbox" id="css" name="topics" value="css">
+        <label for="css">CSS</label> <br>
+        <input type="checkbox" id="js" name="topics" value="js">
+        <label for="js">JS</label> <br>
+        <input type="checkbox" id="node" name="topics" value="node">
+        <label for="node">Node</label> <br> <br>
+        <button class="submit-btn">Submit</button>
+    </form>
+    <hr>
+    <h1>Q 4 : Explain different types of CSS</h1>
+    <div>
+        <b>Inline CSS:</b>
+        Inline CSS contains the CSS property in the body section attached with element is known as inline CSS. This kind of style is specified within an HTML tag using the style attribute.
+        <pre>
+            &lt!DOCTYPE html&gt
+            &lthtml&gt
+                &lthead&gt
+                    &lttitle&gtInline CSS&lt/title&gt
+                &lt/head&gt
+
+                &ltbody&gt
+                    &ltp style = "color:#009900; font-size:50px;
+                            font-style:italic; text-align:center;"&gt
+                        HelloWorld
+                    &lt/p&gt
+                &lt/body&gt
+            &lt/html&gt
+        </pre>
+        <b>Internal CSS: </b>
+        This can be used when a single HTML document must be styled uniquely. The CSS rule set should be within the HTML file in the head section i.e the CSS is embedded within the HTML file.
+        <pre>
+            &lt!DOCTYPE html&gt
+            &lthtml&gt
+                &lthead&gt
+                    &lttitle&gtInternal CSS&lt/title&gt
+                    &ltstyle&gt
+                        .main {
+                            text-align:center;
+                            color:#009900;
+                        }
+                    &lt/style&gt
+                &lt/head&gt
+
+                &ltbody&gt
+                    &ltp class"main"&gt
+                        HelloWorld
+                    &lt/p&gt
+                &lt/body&gt
+            &lt/html&gt
+        </pre>
+        <b>External CSS: </b>
+        External CSS contains separate CSS file which contains only style property with the help of tag attributes (For example class, id, heading, … etc). CSS property written in a separate file with .css extension and should be linked to the HTML document using link tag. This means that for each element, style can be set only once and that will be applied across web pages.
+        <pre>
+            &lt!DOCTYPE html&gt
+            &lthtml&gt
+                &lthead&gt
+                    &lttitle&gtExternal CSS&lt/title&gt
+                    &ltlink rel="stylesheet" href="style.css"/&gt
+                &lt/head&gt
+
+                &ltbody&gt
+                    &ltp&gtHelloWorld&lt/p&gt
+                &lt/body&gt
+            &lt/html&gt
+        </pre>
+    </div>
+    <h1>Q.5 : Create an example to explain the difference between margin and padding</h1>
+    <b>Margin: </b>
+    It is the space around an element. Margins are used to move an element up or down on a page as well as left or right. Margin is completely transparent, and it does not have any background color. It clears the area around the element. Each side of the element has a margin size you can change individually. In creating the gap, the margin pushes adjacent elements away.
+    <i>Example:</i>
+    <p class="margin-example">This element with margin</p>
+    <b>Padding: </b>
+    It is the space between the element and the related content inside it. It determines how elements look and sit within a container. It also shows the container background around the element in it. Padding can be affected by background colors as it clears the area around the content. To create the gap, it either grows the element size or shrinks the content inside. By default, the size of the element increases.
+    <i>Example:</i>
+    <p class="padding-example">This element with padding</p>
+    <hr>
+    <h1>Q.6 : By using flex , arranges 10 boxes. three boxes should be in a row and page should be scrollable</h1>
+    <div class="flex-container">
+        <div class="flex">flex 1</div>
+        <div class="flex">flex 2</div>
+        <div class="flex">flex 3</div>
+        <div class="flex">flex 4</div>
+        <div class="flex">flex 5</div>
+        <div class="flex">flex 6</div>
+        <div class="flex">flex 7</div>
+        <div class="flex">flex 8</div>
+        <div class="flex">flex 9</div>
+        <div class="flex">flex 10</div>
+    </div>
+    <hr>
+    <h1>Q 7 : Create the image or structure given in the image using grid.</h1>
+    <div class="grid-container">
+        <div class="grid g1"></div>
+        <div class="grid g2"></div>
+        <div class="grid g3"></div>
+        <div class="grid g4"></div>
+        <div class="grid g5"></div>
+        <div class="grid g6"></div>
+    </div>
+    <hr>
+</body>
+</html>
